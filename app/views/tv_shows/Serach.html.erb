@@ -1,0 +1,13 @@
+<%= form_tag(action: search_path) %>
+    <%= text_field :search, placeholder="search", search %>
+    <%= button_tag: "submit"  %>
+<% end %> 
+
+<% @tv_show.each do |tv_show| %>
+    <tr>
+      <td><%= tv_show.channel %></td>
+      <td><%= tv_show.show %></td>
+      <td><%= tv_show.timing %></td>
+      <td><%= link_to 'Add to Favorite', favorite_path(tv_show.show) %></td>
+    </tr>
+  <% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  channel: MyString
+  show: MyString
+  timing: MyString
+
+two:
+  channel: MyString
+  show: MyString
+  timing: MyString
